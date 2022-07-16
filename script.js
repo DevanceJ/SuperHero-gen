@@ -13,7 +13,7 @@ const getHTML = (char) => {
 
     }).join('')
     const img = `<img class="main-img" src="${char.image.url}"></img>`
-    mainImg.innerHTML = `${name}${img}${stat}`
+    mainImg.innerHTML = `${name}${img}<span class="power">Power Statistics:</span>${stat}`
 }
 
 function findHero(e) {
